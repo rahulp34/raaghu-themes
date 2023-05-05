@@ -2249,3 +2249,11 @@ html #sidebar ul li a.active small {
 .sidenav-footer {
   background-color: $body-wrapper-bg;
 }
+
+.sidenav-footer {
+  background-color: $primary;
+}
+
+.sidenav-footer svg {
+  color: $white;
+}
