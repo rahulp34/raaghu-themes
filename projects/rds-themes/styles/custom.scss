@@ -2240,8 +2240,8 @@ rds-nav-tab {
 }
 
 .card.card-full-stretch-wthlabel {
-  /* min-height: calc(100vh - 170px) !important*/
-  min-height: calc(100vh - 135px) !important;
+  //min-height: calc(100vh - 170px) !important
+  min-height: calc(100vh - 145px) !important
 }
 
 .header {
@@ -2249,17 +2249,16 @@ rds-nav-tab {
   z-index: 1;
   top: 0px;
   width: calc(100% - 250px);
-  -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
-  -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
-  box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
 }
 
 .aside {
-  -webkit-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.10);
-  -moz-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.1);
-  box-shadow: 12px -9px 5px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.05);
+  -moz-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.05);
+  box-shadow: 12px -9px 5px -8px rgba(0, 0, 0, 0.05);
   position: relative;
-  z-index: 1045;
 }
 
 .iconcopy {
@@ -2268,10 +2267,11 @@ rds-nav-tab {
   right: 14px;
   padding: 3px;
 }
-
-.navbar .dropdown-raaghu-button div div:last-child svg {
-  display: none;
+.navbar .dropdown-raaghu-button div div:last-child svg{
+display: none;
 }
-/*.navbar .dropdown-raaghu-button .text-nowrap{
-  display: none;
-  }*/
+.navbar{
+  -webkit-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.5);
+-moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+}

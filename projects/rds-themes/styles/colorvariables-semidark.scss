@@ -2245,15 +2245,12 @@ html #sidebar ul li a.active small {
   background-color: $card-bg-color;
   border-color: $card-border-color;
 }
-
-.sidenav-footer {
-  background-color: $body-wrapper-bg;
+.sidenav-footer{
+    background-color: $body-wrapper-bg;
 }
-
 .sidenav-footer {
   background-color: $primary;
 }
-
-.sidenav-footer svg {
+.sidenav-footer svg{
   color: $white;
 }

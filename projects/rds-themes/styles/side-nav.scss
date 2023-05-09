@@ -114,9 +114,9 @@
 .sidebar .feat-show {
   transition: all 1s ease-in-out;
 }
-
 .sidenav-footer {
   position: absolute;
+  
   // left: -15px;
   top: -4%;
   // width: 275px;
@@ -128,23 +128,23 @@
   transition: all 0.2s ease-in-out;
   background-color: $white;
   width: 20px;
-  height: 20px;
+    height: 20px;
 }
 
-#sidebar:hover .sidenav-footer {
+#sidebar:hover .sidenav-footer{
   opacity: 1;
 }
 
-.toggle-sidebar-menu .collpase-button svg {
+.toggle-sidebar-menu .collpase-button svg{
   transform: rotate(180deg);
   transition: all 1s ease-in-out;
 }
 
-.sidenav-logo {
-  position: absolute;
+.sidenav-logo{
+  position:absolute;
   top: 5px;
   left: 2px;
-  height: 43px;
+ height: 43px;
 }
 
 @media (max-width: 767px) {
@@ -159,7 +159,6 @@
     padding-bottom: 40px;
     -webkit-overflow-scrolling: auto;
   }
-
   .mobile-sidebar-collapse {
     display: none !important;
   }
@@ -171,14 +170,12 @@
   #sidebar {
     position: absolute !important;
   }
-
-  .header {
-    width: 100%;
+  .header{
+    width:100%;
   }
 }
-
-@media (min-width: 576px) {
-  .navbar-expand-sm .navbar-toggler {
+@media (min-width: 576px){
+.navbar-expand-sm .navbar-toggler {
     display: none;
-  }
+}
 }
