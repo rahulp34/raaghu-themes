@@ -2267,11 +2267,25 @@ rds-nav-tab {
   right: 14px;
   padding: 3px;
 }
-.navbar .dropdown-raaghu-button div div:last-child svg{
-display: none;
+
+.navbar .dropdown-raaghu-button div div:last-child svg {
+  display: none;
 }
-.navbar{
-  -webkit-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.5);
--moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+
+.navbar {
+  -webkit-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+  box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+}
+
+.dashboard {
+  .row {
+    margin-left: -.6rem;
+    margin-right: -.6rem;
+  }
+
+  .row > * {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
