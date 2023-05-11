@@ -498,8 +498,8 @@ html[theme="light"] {
 // /*  .main-section */
 .rds-scrollable-wrapper {
   width: 100%;
-  padding-right: 20px;
-  height: 100vh !important;
+  padding-right: 0px;
+  height: calc( 100vh - 3.5rem) !important;
   overflow: auto;
   overflow-x: hidden;
   /*padding-bottom: 60px !important;*/
@@ -2252,6 +2252,7 @@ rds-nav-tab {
   -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
   -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
   box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  height: 3.5rem;
 }
 
 .aside {
@@ -2267,25 +2268,42 @@ rds-nav-tab {
   right: 14px;
   padding: 3px;
 }
-
-.navbar .dropdown-raaghu-button div div:last-child svg {
-  display: none;
+.navbar .dropdown-raaghu-button div div:last-child svg{
+display: none;
 }
-
-.navbar {
+.navbar{
   -webkit-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
-  -moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
-  box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+-moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
 }
-
-.dashboard {
+.dashboard{
   .row {
     margin-left: -.6rem;
     margin-right: -.6rem;
   }
-
-  .row > * {
+  .row>*{
     padding-left: .5rem;
     padding-right: .5rem;
+  }
+}
+.mt-35{
+  margin-top:3.5rem;
+}
+
+.showMore {
+  border: 1px solid black;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.expandable {
+  width: 40%;
+  margin: auto;
+}
+.layoutmargin{
+  margin:1.5rem;
+}
+@media (max-width: 767px) {
+  .mb-top-margin{
+    margin-top:3.125rem;
   }
 }
