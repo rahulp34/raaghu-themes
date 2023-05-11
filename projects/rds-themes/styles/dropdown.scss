@@ -1,4 +1,11 @@
 // /*dropdown-list custom properties*/
+
+.ui-lib{
+  color: initial;
+}
+.ui-lib:hover{
+  color: $primary;
+}
 .dropdown-item {
   cursor: pointer;
 }
