@@ -499,7 +499,7 @@ html[theme="light"] {
 .rds-scrollable-wrapper {
   width: 100%;
   padding-right: 0px;
-  height: calc( 100vh - 3.5rem) !important;
+  height: calc( 100vh) !important;
   overflow: auto;
   overflow-x: hidden;
   /*padding-bottom: 60px !important;*/
@@ -2260,6 +2260,7 @@ rds-nav-tab {
   -moz-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.05);
   box-shadow: 12px -9px 5px -8px rgba(0, 0, 0, 0.05);
   position: relative;
+  z-index: 99;
 }
 
 .iconcopy {
