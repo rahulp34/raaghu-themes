@@ -498,8 +498,8 @@ html[theme="light"] {
 // /*  .main-section */
 .rds-scrollable-wrapper {
   width: 100%;
-  padding-right: 20px;
-  height: 100vh !important;
+  padding-right: 0px;
+  height: calc( 100vh) !important;
   overflow: auto;
   overflow-x: hidden;
   /*padding-bottom: 60px !important;*/
@@ -2240,25 +2240,27 @@ rds-nav-tab {
 }
 
 .card.card-full-stretch-wthlabel {
-  min-height: calc(100vh - 170px) !important
+  //min-height: calc(100vh - 170px) !important
+  min-height: calc(100vh - 145px) !important
 }
-
+ 
 .header {
   position: fixed;
   z-index: 1;
   top: 0px;
   //width: calc(100% - 250px);
-  -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
-  -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
-  box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
+  height: 3.5rem;
 }
 
 .aside {
-  -webkit-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.10);
-  -moz-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.1);
-  box-shadow: 12px -9px 5px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.05);
+  -moz-box-shadow: 12px -9px 5px -8px rgba(0,0,0,0.05);
+  box-shadow: 12px -9px 5px -8px rgba(0, 0, 0, 0.05);
   position: relative;
-  z-index: 1045;
+  z-index: 99;
 }
 
 .iconcopy {
@@ -2267,10 +2269,42 @@ rds-nav-tab {
   right: 14px;
   padding: 3px;
 }
-
-.navbar .dropdown-raaghu-button div div:last-child svg {
-  display: none;
+.navbar .dropdown-raaghu-button div div:last-child svg{
+display: none;
 }
-/*.navbar .dropdown-raaghu-button .text-nowrap{
-  display: none;
-  }*/
+.navbar{
+  -webkit-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+-moz-box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+box-shadow: inset 6px 0px 5px -3px rgba(0,0,0,0.05);
+}
+.dashboard{
+  .row {
+    margin-left: -.6rem;
+    margin-right: -.6rem;
+  }
+  .row>*{
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+.mt-35{
+  margin-top:3.5rem;
+}
+
+.showMore {
+  border: 1px solid black;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.expandable {
+  width: 40%;
+  margin: auto;
+}
+.layoutmargin{
+  margin:1.5rem;
+}
+@media (max-width: 767px) {
+  .mb-top-margin{
+    margin-top:3.125rem;
+  }
+}
