@@ -1,4 +1,11 @@
 // /*dropdown-list custom properties*/
+
+.ui-lib{
+  color: initial;
+}
+.ui-lib:hover{
+  color: $primary;
+}
 .dropdown-item {
   cursor: pointer;
 }
@@ -67,7 +74,7 @@
   margin-top: 54px
 }
 #chartDrop{
-  max-height: 280px;
+  max-height: 80vh;
   overflow-y: auto;
 }
 .multi-drop{
