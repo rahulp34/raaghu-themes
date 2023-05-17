@@ -1,9 +1,12 @@
 // /*button custom properties*/
 .btn {
   text-transform: uppercase;
-  min-width: 0.20rem
+  min-width: 5.25rem
 }
 
+.three-dot-btn{
+  min-width: 0.15rem;
+}
 .btn-icon {
   min-width: auto;
   align-items: center;
