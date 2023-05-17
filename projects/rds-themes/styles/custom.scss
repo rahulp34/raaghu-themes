@@ -1046,6 +1046,7 @@ div#file-upload-filename {
 
 #sidebar {
   height: calc(100vh - 100px) !important;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -2229,16 +2230,15 @@ rds-nav-tab {
   max-width: 900px;
 }
 
-.login-card-height {
-  height: 524px;
-}
-
 .theme-toggle {
   position: absolute;
   bottom: 100px;
   left: 50px;
 }
 
+  .login-card-height {
+    height: 532px;
+  }
 .card.card-full-stretch-wthlabel {
   //min-height: calc(100vh - 170px) !important
   min-height: calc(100vh - 145px) !important
@@ -2248,7 +2248,7 @@ rds-nav-tab {
   position: fixed;
   z-index: 1;
   top: 0px;
-  //width: calc(100% - 250px);
+  width: calc(100% - 250px);
   -webkit-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
   -moz-box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
   box-shadow: -2px 13px 5px -9px rgba(0,0,0,0.05);
@@ -2323,4 +2323,8 @@ rds-nav-tab {
 
 .navbar {
   height: 50px;
+}
+
+.offcanvas-title {
+  font-weight: $font-weight-bold;
 }
