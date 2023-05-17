@@ -89,6 +89,15 @@
   .breadcrumbs a span {
     display: none;
   }
+  .mobile-ul-tabs{
+      overflow-x: scroll;
+      display: flex;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      align-items: normal;
+      overflow-y: hidden;
+      margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
