@@ -561,7 +561,7 @@ svg {
     tr {
       td {
         color: $gray-600;
-        font-size:$font-size-base ;
+        font-size: $font-size-base;
       }
 
       td:first-child {
@@ -2302,9 +2302,46 @@ html #sidebar ul li a.active small {
   background-color: $card-bg-color;
   border-color: $card-border-color;
 }
+
 .sidenav-footer {
   background-color: $primary;
 }
-.sidenav-footer svg{
+
+.sidenav-footer svg {
   color: $white;
+}
+
+.card-toolbar {
+  svg:hover {
+    fill: none;
+    stroke: $primary;
+
+    polyline.icon {
+      stroke: $primary;
+    }
+
+    polygon.icon {
+      stroke: $primary;
+    }
+
+    ellipse.icon {
+      stroke: $primary;
+    }
+
+    path.icon {
+      stroke: $primary;
+    }
+
+    line.icon {
+      stroke: $primary;
+    }
+
+    rect.icon {
+      stroke: $primary;
+    }
+
+    circle.icon {
+      stroke: $primary;
+    }
+  }
 }
