@@ -157,7 +157,7 @@
 
   .sidenav-logo {
     z-index: 2;
-    left: 3.25rem;
+    left: 0rem;
   }
 
   .mob-description {
@@ -169,8 +169,8 @@
   }
 
   .right-side-menu {
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    bottom: 10px;
     left: 0px;
     display: none;
     background-color: #fff;
@@ -178,10 +178,9 @@
 
   .sidenav-footer {
     position: fixed;
-    left: 11px;
-    right: auto;
+    right: 1.25rem;
     opacity: 1;
-    top: 1.0625rem;
+    top: 0.8rem;
     width: 25px;
     height: 25px;
   }

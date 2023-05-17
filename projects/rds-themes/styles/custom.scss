@@ -492,7 +492,7 @@ html[theme="light"] {
 }
 
 .card.card-full-stretch {
-  min-height: calc(100vh - 135px) !important;
+  min-height: calc(100vh) !important;
 }
 
 // /*  .main-section */
@@ -1046,8 +1046,6 @@ div#file-upload-filename {
 
 #sidebar {
   height: calc(100vh - 100px) !important;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 a.nav-link.breadcrumb-navlink.active {
