@@ -2259,10 +2259,6 @@ html #sidebar ul li a.active small {
   color: $white;
 }
 
-.sidenav-footer {
-  background-color: $primary;
-}
-
 .sidenav-footer svg {
   color: $white;
 }
@@ -2299,5 +2295,15 @@ html #sidebar ul li a.active small {
     circle.icon {
       stroke: $primary;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidenav-footer {
+    background-color: transparent;
+  }
+
+  .right-side-menu {
+    background-color: transparent;
   }
 }

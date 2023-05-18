@@ -2345,3 +2345,13 @@ html #sidebar ul li a.active small {
     }
   }
 }
+
+@media (max-width: 767px) {
+  .sidenav-footer {
+    background-color: transparent;
+  }
+
+  .right-side-menu {
+    background-color: $light;
+  }
+}

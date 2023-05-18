@@ -2240,7 +2240,7 @@ rds-nav-tab {
 
 .card.card-full-stretch-wthlabel {
   //min-height: calc(100vh - 170px) !important
-  min-height: calc(100vh - 145px) !important
+  min-height: calc(100vh - 128px) !important
 }
 
 .header {
@@ -2307,12 +2307,16 @@ rds-nav-tab {
 }
 
 .layoutmargin {
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 @media (max-width: 767px) {
   .mb-top-margin {
-    margin-top: 3.125rem;
+    margin-top: 1.125rem;
+  }
+
+  .navbar {
+    height: 80px;
   }
 }
 
