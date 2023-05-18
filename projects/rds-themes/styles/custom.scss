@@ -2228,16 +2228,15 @@ rds-nav-tab {
   max-width: 900px;
 }
 
-.login-card-height {
-  height: 524px;
-}
-
 .theme-toggle {
   position: absolute;
   bottom: 100px;
   left: 50px;
 }
 
+  .login-card-height {
+    height: 532px;
+  }
 .card.card-full-stretch-wthlabel {
   //min-height: calc(100vh - 170px) !important
   min-height: calc(100vh - 145px) !important
