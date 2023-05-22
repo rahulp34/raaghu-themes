@@ -2228,15 +2228,16 @@ rds-nav-tab {
   max-width: 900px;
 }
 
+.login-card-height {
+  height: 524px;
+}
+
 .theme-toggle {
   position: absolute;
   bottom: 100px;
   left: 50px;
 }
 
-  .login-card-height {
-    height: 532px;
-  }
 .card.card-full-stretch-wthlabel {
   //min-height: calc(100vh - 170px) !important
   min-height: calc(100vh - 128px) !important
@@ -2329,4 +2330,13 @@ rds-nav-tab {
 
 .offcanvas-title {
   font-weight: $font-weight-bold;
+}
+
+.profile-offcanvas {
+  li:hover {
+    svg {
+      transition: all 0.6s linear;
+      transform: scale(1.2);
+    }
+  }
 }
