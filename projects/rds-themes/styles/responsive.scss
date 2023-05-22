@@ -190,3 +190,16 @@
 form input[type=password]{
   padding-right: 3rem;
 }
+
+.form-control .npm__react-simple-code-editor__textarea:focus, 
+  .form-control .npm__react-simple-code-editor__textarea:focus-visible
+  .npm__react-simple-code-editor__textarea:focus,
+  .npm__react-simple-code-editor__textarea:focus-visible{
+    border: 1px solid #bf97f7 !important;
+    border-radius: 0.25rem;
+    outline: 0px;
+  }
+  textarea.npm__react-simple-code-editor__textarea:focus-visible{
+    outline: 0px;
+    outline: -webkit-focus-ring-color auto 0px;
+  }
