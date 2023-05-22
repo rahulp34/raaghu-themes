@@ -655,6 +655,7 @@ svg {
   }
 
   .active .page-link {
+    z-index: 0;
     color: $pagination-bg-color;
     background-color: $page-link-active-color;
   }
