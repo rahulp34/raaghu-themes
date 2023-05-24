@@ -998,7 +998,7 @@ a {
       }
 
       a:hover {
-        color: $nav-active-color;
+        color: $white;
         // transition: all 0.3s linear;
         // transform: scale(1.5);
 
@@ -1423,6 +1423,34 @@ $form-feedback-color: $gray-700;
   background: $white;
 }
 
+.react-datepicker__header {
+  background-color: transparent;
+}
+
+.react-datepicker {
+  background-color: $datepicker-bg;
+}
+
+.react-datepicker__day:hover {
+  background-color: $gray-800;
+}
+
+.react-datepicker__current-month {
+  color: white;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  color: white;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--selected:hover {
+  background-color: $primary;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: $primary;
+}
+
 .tab-content.profileMenuContent {
   background-color: $white;
 }
@@ -1542,11 +1570,9 @@ html #sidebar ul li a.active small {
 .form-select {
   background-color: $form-select-bg1;
   border-color: $form-select-border-color1;
-  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
-.form-select-single{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); 
-}
+
 #sidebar.toggle-sidebar-menu {
   ul {
     li {
@@ -1946,10 +1972,7 @@ html #sidebar ul li a.active small {
 .form-select {
   background-color: $form-select-bg1;
   border-color: $form-select-border-color1;
-  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-}
-.form-select-single{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); 
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
 #sidebar.toggle-sidebar-menu {

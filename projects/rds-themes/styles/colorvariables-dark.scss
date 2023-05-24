@@ -1817,6 +1817,40 @@ $form-feedback-color: $gray-200;
   background-color: $datepicker-bg;
 }
 
+.react-datepicker__header {
+  background-color: transparent;
+}
+
+.datepicker {
+  .dropdown-toggle {
+    color: white;
+  }
+}
+
+.react-datepicker {
+  background-color: $datepicker-bg;
+}
+
+.react-datepicker__day:hover {
+  background-color: $gray-800;
+}
+
+.react-datepicker__current-month {
+  color: white;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  color: white;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--selected:hover {
+  background-color: $primary;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: $primary;
+}
+
 .theme-green .bs-datepicker-head {
   background-color: transparent;
 }
