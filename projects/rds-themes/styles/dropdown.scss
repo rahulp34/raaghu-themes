@@ -1,25 +1,22 @@
 // /*dropdown-list custom properties*/
-
-.ui-lib{
-  color: initial;
-}
-.ui-lib:hover{
-  color: $primary;
-}
 .dropdown-item {
   cursor: pointer;
 }
+
 .dropdown-menu {
   --bs-dropdown-min-width: 8rem;
   padding: 0 0;
 }
-.multi-level-drop >.dropdown-menu{
+
+.multi-level-drop > .dropdown-menu {
   --bs-dropdown-link-hover-bg: white;
 }
-.multi-level-drop >.dropdown-menu > .active{
-  background-color:#E9ECEF;
-   --bs-dropdown-link-hover-bg: #E9ECEF;
+
+.multi-level-drop > .dropdown-menu > .active {
+  background-color: #E9ECEF;
+  --bs-dropdown-link-hover-bg: #E9ECEF;
 }
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -45,6 +42,7 @@
   text-align: left;
   border-color: transparent !important;
 }
+
 #action-dropdown .rounded-pill {
   text-align: center;
   color: gray;
@@ -59,7 +57,8 @@
 .dropdown ul {
   width: 100%;
 }
-.multi-dropp{
+
+.multi-dropp {
   position: absolute;
   z-index: 1000;
   background-color: white;
@@ -67,17 +66,21 @@
   border-radius: 4px;
   margin-left: 144px;
 }
-.Charts{
+
+.Charts {
   margin-top: 29px;
 }
-.Components{
+
+.Components {
   margin-top: 54px
 }
-#chartDrop{
-  max-height: 80vh;
+
+#chartDrop {
+  max-height: 280px;
   overflow-y: auto;
 }
-.multi-drop{
+
+.multi-drop {
   position: absolute;
   z-index: 1000;
   background-color: white;
@@ -85,11 +88,13 @@
   border-radius: 4px;
   margin-left: 144px;
 }
-.submenu-li:hover{
+
+.submenu-li:hover {
   background-color: #E9ECEF;
 }
-.selected-border{
-width: 20px;
-border-radius: 20px;
-height: 20px;
+
+.selected-border {
+  width: 20px;
+  border-radius: 20px;
+  height: 20px;
 }

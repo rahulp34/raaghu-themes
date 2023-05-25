@@ -1,5 +1,5 @@
-.testclass{
-    color: red;
+.testclass {
+  color: red;
 }
 
 .react-datepicker__input-container input{
@@ -8,8 +8,8 @@
     border-bottom-left-radius: 5px;
 }
 
-.datepicker__input{
-    border: 2px solid;
+.datepicker__input {
+  border: 2px solid;
 }
 
 .datepicker__wrapper{
@@ -20,29 +20,18 @@
 .datepicker__icon-box{
     display: flex;
     // height: 30px;
-
 }
 
-.datepicker__icon-box .input-group-text{
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+.datepicker__icon-box .input-group-text {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 
-.dropClass{
-    display: none;
-}
-
-.daterange__dropdown-item{
-    background-color: white;
-}
-.daterange__dropdown-item:hover{
-    background-color: lightblue;
-    color: white;
+.dropClass {
+  display: none;
 }
 
 .input-group-datePicker {
-    
-    flex-wrap: nowrap !important;
-    
+  flex-wrap: nowrap !important;
 }

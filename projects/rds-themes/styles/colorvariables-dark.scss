@@ -720,7 +720,7 @@ svg {
 
     tr {
       th {
-        color: $white;
+        color: $gray-600;
         padding: 1rem 0.5rem;
       }
     }
@@ -1376,6 +1376,53 @@ svg {
           }
         }
       }
+
+      a:hover {
+        color: $nav-active-color;
+        // transition: all 0.3s linear;
+        // transform: scale(1.5);
+
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: none;
+          stroke: $primary;
+          transition: all 0.6s linear;
+          transform: scale(1.2);
+
+          polyline.icon {
+            stroke: $primary;
+          }
+
+          polygon.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+
+          path.icon {
+            stroke: $primary;
+          }
+
+          line.icon {
+            stroke: $primary;
+          }
+
+          rect.icon {
+            stroke: $primary;
+          }
+
+          circle.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+        }
+      }
     }
 
     li.active {
@@ -1770,6 +1817,40 @@ $form-feedback-color: $gray-200;
   background-color: $datepicker-bg;
 }
 
+.react-datepicker__header {
+  background-color: transparent;
+}
+
+.datepicker {
+  .dropdown-toggle {
+    color: white;
+  }
+}
+
+.react-datepicker {
+  background-color: $datepicker-bg;
+}
+
+.react-datepicker__day:hover {
+  background-color: $gray-800;
+}
+
+.react-datepicker__current-month {
+  color: white;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  color: white;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--selected:hover {
+  background-color: $primary;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: $primary;
+}
+
 .theme-green .bs-datepicker-head {
   background-color: transparent;
 }
@@ -1994,10 +2075,6 @@ $form-feedback-color: $gray-200;
   }
 }
 
-.sidenav-footer {
-  background-color: $primary;
-}
-
 .sidenav-footer svg {
   color: $white;
 }
@@ -2033,6 +2110,62 @@ $form-feedback-color: $gray-200;
 
     circle.icon {
       stroke: $primary;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  .sidenav-footer {
+    background-color: transparent;
+
+    .collpase-button {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .right-side-menu {
+    background-color: $body-wrapper-bg;
+  }
+}
+
+.right-side-menu {
+
+  svg {
+    fill: none;
+    stroke: $light-200;
+
+    polyline.icon {
+      stroke: $light-200;
+    }
+
+    polygon.icon {
+      stroke: $light-200;
+    }
+
+    ellipse.icon {
+      stroke: $light-200;
+    }
+
+    path.icon {
+      stroke: $light-200;
+    }
+
+    line.icon {
+      stroke: $light-200;
+    }
+
+    rect.icon {
+      stroke: $light-200;
+    }
+
+    circle.icon {
+      stroke: $light-200;
+    }
+
+    ellipse.icon {
+      stroke: $light-200;
     }
   }
 }
