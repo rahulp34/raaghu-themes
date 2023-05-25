@@ -36,6 +36,12 @@
   opacity: 0;
 }
 
+.spinner svg {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 .spinner::before {
   content: "";
   position: absolute;
