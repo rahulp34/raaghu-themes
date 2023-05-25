@@ -4,10 +4,6 @@
   min-width: 5.25rem;
 }
 
-.three-dot-btn{
-  min-width: 0.15rem;
-}
-
 .btn-icon {
   min-width: auto;
   align-items: center;
@@ -18,10 +14,12 @@
 .btn-circle {
   border-radius: 50%;
 }
+
 .btn {
   &:active {
     box-shadow: none;
   }
+
   &:focus {
     box-shadow: none;
   }
@@ -59,7 +57,4 @@
   border-radius: 50%;
   animation: spinner 0.8s linear infinite;
   display: inline-grid;
-}
-.btn {
-  padding-left: 0.3 rem;
 }

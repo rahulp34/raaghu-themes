@@ -650,6 +650,7 @@ svg {
   }
 
   .active .page-link {
+    z-index: 0;
     color: $pagination-bg-color;
     background-color: $page-link-active-color;
   }
@@ -962,6 +963,53 @@ a {
         svg {
           fill: none;
           stroke: $primary;
+
+          polyline.icon {
+            stroke: $primary;
+          }
+
+          polygon.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+
+          path.icon {
+            stroke: $primary;
+          }
+
+          line.icon {
+            stroke: $primary;
+          }
+
+          rect.icon {
+            stroke: $primary;
+          }
+
+          circle.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+        }
+      }
+
+      a:hover {
+        color: $white;
+        // transition: all 0.3s linear;
+        // transform: scale(1.5);
+
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: none;
+          stroke: $primary;
+          transition: all 0.6s linear;
+          transform: scale(1.2);
 
           polyline.icon {
             stroke: $primary;
@@ -1376,6 +1424,34 @@ $form-feedback-color: $gray-700;
   background: $white;
 }
 
+.react-datepicker__header {
+  background-color: transparent;
+}
+
+.react-datepicker {
+  background-color: $datepicker-bg;
+}
+
+.react-datepicker__day:hover {
+  background-color: $gray-800;
+}
+
+.react-datepicker__current-month {
+  color: white;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  color: white;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--selected:hover {
+  background-color: $primary;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: $primary;
+}
+
 .tab-content.profileMenuContent {
   background-color: $white;
 }
@@ -1495,11 +1571,9 @@ html #sidebar ul li a.active small {
 .form-select {
   background-color: $form-select-bg1;
   border-color: $form-select-border-color1;
-  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
-.form-select-single{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); 
-}
+
 #sidebar.toggle-sidebar-menu {
   ul {
     li {
@@ -1899,10 +1973,7 @@ html #sidebar ul li a.active small {
 .form-select {
   background-color: $form-select-bg1;
   border-color: $form-select-border-color1;
-  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-}
-.form-select-single{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); 
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
 #sidebar.toggle-sidebar-menu {
@@ -2237,7 +2308,7 @@ html #sidebar ul li a.active small {
 }
 
 .datepicker__input {
-  width: fit-content !important;
+  // width: fit-content !important;
   background-color: white;
   border: 2px solid lightgrey;
 }
@@ -2262,10 +2333,6 @@ html #sidebar ul li a.active small {
 
 .sidenav-footer svg {
   color: $white;
-}
-
-.sidenav-footer {
-  background-color: $primary;
 }
 
 .sidenav-footer svg {
@@ -2304,5 +2371,15 @@ html #sidebar ul li a.active small {
     circle.icon {
       stroke: $primary;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidenav-footer {
+    background-color: transparent;
+  }
+
+  .right-side-menu {
+    background-color: transparent;
   }
 }
